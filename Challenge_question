@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMi2nkF62SGP1dljl7548JA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/khushiarora1793/Challenge_questions/blob/main/Challenge_question\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "--------------------------------------------------------------------------------------------------------------------\n",
+        "1. Write a python program to sort the list of heterogeneous data.\n",
+        "e.g.\n",
+        "L = [\"Ram\", 1, \"Shyam\", 2, \"Aman\", 3]\n"
+      ],
+      "metadata": {
+        "id": "LlDeR9C0kd81"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "L = [\"Ram\", 1, \"Shyam\", 2, \"Aman\", 3]\n",
+        "print(\"Original list:\", L)\n",
+        "str_list = [i for i in L if isinstance(i, str)]\n",
+        "num_list = [i for i in L if isinstance(i, int)]\n",
+        "str_list.sort()\n",
+        "num_list.sort()\n",
+        "L = str_list + num_list\n",
+        "print(\"Sorted list:\", L)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Via9zdjokgpu",
+        "outputId": "492f85bb-598c-4571-aaa3-c5fd7480a56d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Original list: ['Ram', 1, 'Shyam', 2, 'Aman', 3]\n",
+            "Sorted list: ['Aman', 'Ram', 'Shyam', 1, 2, 3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "isinstance() function in Python is used to check if an object belongs to a specific class or type. It takes two parameters: the object we want to check and the class/type we want to compare it against.\n"
+      ],
+      "metadata": {
+        "id": "WSY4yKz-lerA"
+      }
+    }
+  ]
+}
